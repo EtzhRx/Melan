@@ -6,7 +6,7 @@ from discord.ext import commands
 from discord.ext.commands import Bot
 
 
-bot=commands.Bot(command_prefix='a.')
+bot=commands.Bot(command_prefix='sc!')
 
 from discord import opus
 OPUS_LIBS = ['libopus-0.x86.dll', 'libopus-0.x64.dll',
@@ -80,4 +80,4 @@ async def stop(ctx):
 
 
 
-bot.run(os.environ['BOT_TOKEN'])
+bot.run(os.environ['NDkwNDAxMjY2Njg2NjIzNzQ0.DoYTbg._Euo3G8ksxcxTahOvfbGL1BMDTU'])
