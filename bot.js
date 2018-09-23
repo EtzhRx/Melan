@@ -10,8 +10,8 @@ client.on("message", (message) => {
   if (message.content.startsWith(prefix + "skitter")) {
     message.channel.send("ig: _bagus.setiawan follow ya :)");
   } else
-  if (message.content.startsWith(prefix + "foo")) {
-    message.channel.send("bar!");
+  if (message.content.startsWith(prefix + "play")) {
+    message.channel.send("gak bisa play music aowkowkowkook");
   }
 });
 
