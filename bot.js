@@ -1,6 +1,8 @@
 onst Discord = require('discord.js');
 const client = new Discord.Client();
 
+client.login(process.env.BOT_TOKEN);
+
 client.on('message', async message => {
   // Voice only works in guilds, if the message does not come from a guild,
   // we ignore it
@@ -17,4 +19,4 @@ client.on('message', async message => {
 });
 
 // THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+
