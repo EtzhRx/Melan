@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+
 client.login('NTA4Njg1MDgwNDc5MjY4OTAz.DsC1rQ.r_Kieyh7ojnTcR6Ua2fF5kLgEvc');
 
 client.on('message', async message => {
@@ -17,3 +18,16 @@ client.on('message', async message => {
     }
   }
 });
+
+const dispatcher = connection.play('/home/discord/audio.mp3');
+
+dispatcher.pause();
+dispatcher.resume();
+
+dispatcher.setVolume(0.5); // half the volume
+
+dispatcher.on('finish', () => {
+  console.log('Finished playing!');
+});
+
+dispatcher.destroy(); // end the stream
