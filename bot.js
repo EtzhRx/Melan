@@ -4,11 +4,8 @@ const client = new Discord.Client();
 
 client.login('NTA4Njg1MDgwNDc5MjY4OTAz.DsC1rQ.r_Kieyh7ojnTcR6Ua2fF5kLgEvc');
 let prefix = "p ";
-client.on('message', async message => {
-  // Voice only works in guilds, if the message does not come from a guild,
-  // we ignore it
-  if (!message.guild) return;
-  
+client.on("message", (message) => {
+
   if (message.content.startsWith(prefix + "youtube")) {
     message.channel.send("https://www.youtube.com/channel/UC4KN0anLirlTsn95Ugrroeg");
   }
