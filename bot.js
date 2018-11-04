@@ -1,22 +1,18 @@
-const Discord = require("discord.js");
+onst Discord = require('discord.js');
 const client = new Discord.Client();
- 
-// Set the prefix
-let prefix = "!";
-client.on("message", (message) => {
-  // Exit and stop if the prefix is not there or if user is a bot
-  if (!message.content.startsWith(prefix) || message.author.bot) return;
- 
-  if (message.content.startsWith(prefix + "skitter")) {
-    message.channel.send("ig: _bagus.setiawan follow ya :)");
-  } else
-   
-  if (message.content.startsWith(prefix + "p")) {
-    message.channel.send("gak bisa play music aowkowkowkook");
-  }
-   
-  if (message.content.startsWith(prefix + "play")) {
-    message.channel.send("gak bisa play music aowkowkowkook");
+
+client.on('message', async message => {
+  // Voice only works in guilds, if the message does not come from a guild,
+  // we ignore it
+  if (!message.guild) return;
+
+  if (message.content === '/join') {
+    // Only try to join the sender's voice channel if they are in one themselves
+    if (message.member.voice.channel) {
+      const connection = await message.member.voice.channel.join();
+    } else {
+      message.reply('You need to join a voice channel first!');
+    }
   }
 });
 
