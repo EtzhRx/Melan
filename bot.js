@@ -2,9 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require('./config.json');
 client.config = config;
-const dj = require("dankjson");
-const chalk = require("chalk");
-const Bot = require("./Bot.js");
+
 
 console.log("Silence Creed V.1.0");
 
