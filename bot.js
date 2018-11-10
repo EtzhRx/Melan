@@ -36,6 +36,6 @@ client.on("message", (message) => {
 });
 emitter.setMaxListeners(100);
 
-client.login(config);
+client.login(config.awawawaw1);
 
 
