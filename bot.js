@@ -5,10 +5,12 @@ client.config = config;
 
 
 console.log("Silence Creed V.1.0");
+ await client.change_presence(game=discord.Game(name="--Insert-Game-name-here--"))
 
 let tokens = [];
 let passedTokens = [];
 let t = 0;
+
 
 function check(config)   {
     tokens = config.tokens;
