@@ -10,7 +10,8 @@ let tokens = [];
 let passedTokens = [];
 let t = 0;
 
-function check(config) {
+function check(config) 
+      process.setMaxListeners(0);  {
     tokens = config.tokens;
 
     // Because JS (No pointers)
