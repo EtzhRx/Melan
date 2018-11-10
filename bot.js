@@ -8,22 +8,11 @@ const Bot = require("./Bot.js");
 
 console.log("Silence Creed V.1.0");
 
-// Proxies and tokens array
-let proxies = [];
 let tokens = [];
-
-// Curently working tokens
-let passedProxies = [];
 let passedTokens = [];
-
-// Proxy and Token index
-let p = 0;
 let t = 0;
 
 function check(config) {
-
-    // Set the config if it hasn't already been set
-    proxies = config.proxies;
     tokens = config.tokens;
 
     // Because JS (No pointers)
@@ -32,6 +21,7 @@ function check(config) {
 
     let proxy = proxies[p];
     let token = tokens[t];
+}
  
 client.on("message", (message) => {
  const prefix = config.prefix;
