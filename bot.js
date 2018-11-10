@@ -39,9 +39,6 @@ client.on("message", (message) => {
 
 
 client.login(config.awawawaw1);
-client.login(config.awawawaw2);
-client.login(config.awawawaw3);
-client.login(config.awawawaw4);
-client.login(config.awawawaw5);
+
 
 
