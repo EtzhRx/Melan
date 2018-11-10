@@ -48,7 +48,4 @@ client.login(config.awawawaw7);
 client.login(config.awawawaw8);
 client.login(config.awawawaw9);
 client.login(config.awawawaw10);
-client.login(config.awawawaw11);
-client.login(config.awawawaw12);
-client.login(config.awawawaw13);
-client.login(config.awawawaw14);
+
