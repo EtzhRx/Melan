@@ -35,4 +35,4 @@ client.on("message", (message) => {
   
 });
 
-client.login(config.botToken);
+client.login(config.awawawaw);
