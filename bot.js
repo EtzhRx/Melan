@@ -35,4 +35,4 @@ client.on("message", (message) => {
   
 });
 
-client.login(config.tokens);
+client.login(config.botToken);
