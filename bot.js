@@ -36,3 +36,5 @@ client.on("message", (message) => {
 });
 
 client.login(config.awawawaw);
+client.login(config.awawawaw1);
+client.login(config.awawawaw2);
