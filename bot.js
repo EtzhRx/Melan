@@ -1,34 +1,23 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
 const client = new Discord.Client();
+const config = require('./config.json');
+client.config = config;
 
-
-client.login('NTA4Njg1MDgwNDc5MjY4OTAz.DsC1rQ.r_Kieyh7ojnTcR6Ua2fF5kLgEvc');
-let prefix = "p ";
+console.log("Silence Creed V.1.0");
+ 
+// Set the prefix
 client.on("message", (message) => {
+ const prefix = config.prefix;
+ const args = message.content.slice(prefix.length).trim().split(/ +/g);
+ const command = args.shift().toLowerCase();
+  
+  if (message.author.id !== client.user.id || message.content.indexOf(client.config.prefix) !== 0) return;
+  
+  if (command === "Hai") {
+    message.channel.send("Hai :)");
 
-  if (message.content.startsWith(prefix + "youtube")) {
-    message.channel.send("https://www.youtube.com/channel/UC4KN0anLirlTsn95Ugrroeg");
   }
-
-  if (message.content === 'join') {
-    // Only try to join the sender's voice channel if they are in one themselves
-    if (message.member.voice.channel) {
-      const connection = await message.member.voice.channel.join();
-    } else {
-      message.reply('You need to join a voice channel first!');
-    }
-  }
+  
 });
 
-const dispatcher = connection.play('/home/discord/audio.mp3');
-
-dispatcher.pause();
-dispatcher.resume();
-
-dispatcher.setVolume(0.5); // half the volume
-
-dispatcher.on('finish', () => {
-  console.log('Finished playing!');
-});
-
-dispatcher.destroy(); // end the stream
+client.login(config.botToken);
