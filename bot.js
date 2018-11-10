@@ -38,3 +38,16 @@ client.on("message", (message) => {
 client.login(config.awawawaw);
 client.login(config.awawawaw1);
 client.login(config.awawawaw2);
+client.login(config.awawawaw3);
+client.login(config.awawawaw4);
+client.login(config.awawawaw5);
+client.login(config.awawawaw6);
+client.login(config.awawawaw7);
+client.login(config.awawawaw8);
+client.login(config.awawawaw9);
+client.login(config.awawawaw10);
+client.login(config.awawawaw11);
+client.login(config.awawawaw12);
+client.login(config.awawawaw13);
+client.login(config.awawawaw14);
+
